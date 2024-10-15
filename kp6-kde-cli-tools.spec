@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.2.0
+%define		kdeplasmaver	6.2.1
 %define		qtver		5.15.2
 %define		kpname		kde-cli-tools
 Summary:	Tools based on KDE Frameworks 5 to better interact with the system
 Name:		kp6-%{kpname}
-Version:	6.2.0
+Version:	6.2.1
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	db1f5e414621909b842c0020cf890408
+# Source0-md5:	819bb02e8e9fb3af36391e65d6b05bac
 URL:		https://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	cmake >= 3.16.0
@@ -104,6 +104,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_desktopdir}/org.kde.keditfiletype.desktop
 %attr(755,root,root) %{_bindir}/kde-inhibit
 %lang(fr) %{_mandir}/fr/man1/kdesu.1*
+%lang(sr@latin) %{_mandir}/sr@latin/man1/kdesu.1*
 %lang(tr) %{_mandir}/tr/man1/kdesu.1*
 %{_libdir}/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_filetypes.so
 %{_desktopdir}/kcm_filetypes.desktop
