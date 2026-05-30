@@ -36,7 +36,10 @@ Obsoletes:	kp5-%{kpname} < 6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Tools based on KDE Frameworks 5 to better interact with the system.
+Tools based on KDE Frameworks 6 to better interact with the system.
+
+%description -l pl.UTF-8
+Narzędzia oparte na Szkieletach KDE, żeby współgrać z systemem.
 
 %prep
 %setup -q -n %{kpname}-%{version}
