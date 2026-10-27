@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.8.0
+%define		kdeplasmaver	6.8.2
 %define		qtver		6.8.0
 %define		kpname		kde-cli-tools
 Summary:	Tools based on KDE Frameworks 5 to better interact with the system
 Name:		kp6-%{kpname}
-Version:	6.8.0
-Release:	2
+Version:	6.8.2
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	ad276d3bc0aae6d0d89923f77be07fda
+# Source0-md5:	a2a030aba033ea94de75f1a4f9612905
 URL:		https://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	cmake >= 3.16.0
